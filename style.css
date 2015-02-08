@@ -1,0 +1,26 @@
+/* 
+Theme Name: O Rappa
+Theme URI: http://www.orappa.com.br/
+Author: Julian Andrade e Rafael Motta
+Author URI: http://www.ndrade.com.br/
+Description: Tema para site da banda O Rappa
+Version: 1.0
+Text Domain: orappa
+*/
+
+/*.container {}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}*/
