@@ -1,4 +1,20 @@
 <?php
+function getPageTemplateCommand()
+{
+	$pageTemplateSlug = get_page_template_slug();
+	
+	if(
+			$pageTemplateSlug === 'page-template/front-page.php' ||
+			empty($pageTemplateSlug)
+	){
+		return null;
+	}
+	
+	return explode("-",str_replace(".php", "", $pageTemplateSlug));	
+}
+
+// Plugins
+require get_template_directory() . '/plugins/acf-repeater/acf-repeater.php';
 
 function orappa_setup() {
 	// This theme uses wp_nav_menu() in one location.
