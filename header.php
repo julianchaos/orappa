@@ -17,8 +17,8 @@
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	</head>
 	<body <?php body_class(); ?>>
-		<header>
-			<nav class="navbar navbar-default" role="navigation">
+		<header class="container">
+			<nav class="navbar navbar-default row" role="navigation">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="sr-only">Toggle navigation</span>

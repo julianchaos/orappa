@@ -24,3 +24,22 @@ Text Domain: orappa
     width: 1170px;
   }
 }*/
+
+/* HEADER */
+.navbar-default .navbar-header {
+	height: 64px;
+}
+.navbar-default .navbar-toggle {
+	margin-top: 12px;
+}
+.navbar-default .navbar-brand {
+	padding: 0 15px;
+	width: 120px;
+}
+.navbar-default .navbar-brand img {
+	width: 100%;
+}
+
+.navbar-default .navbar-collapse {
+	border-color: transparent;
+}
