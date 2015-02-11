@@ -6,15 +6,15 @@
 <section id="page_<?php the_id() ?>" class="content-agenda page_<?php the_id() ?>">
 	<div class="container">
 		<div class="row">
-			<h2><?php the_title() ?></h2>
-			<h3>
+			<h1 class="col-xs-12"><?php the_title() ?></h1>
+			<h2 class="col-xs-12">
 				<?php the_field('subtitulo') ?>
 				<span class="tag"><?php the_field('subtitulo_tag') ?></span>
-			</h3>
+			</h2>
 		</div>
 <?php
 if( have_rows('datas_shows') ): ?>
-		<div class="row">
+		<div class="row data-show-header">
 			<div class="col-xs-2">Data</div>
 			<div class="col-xs-6">Cidade</div>
 			<div class="col-xs-4">Ingressos</div>
@@ -33,7 +33,7 @@ if( have_rows('datas_shows') ): ?>
 				<?php the_sub_field('cidade') ?>
 			</div>
 			<div class="col-xs-4">
-				<a href="<?php the_sub_field('url_ingressos') ?>">Comprar</a>
+				<a href="<?php the_sub_field('url_ingressos') ?>" class="button">Comprar</a>
 			</div>
 		</div>
 <?php

@@ -25,6 +25,23 @@ Text Domain: orappa
   }
 }*/
 
+/* GENERIC */
+a.button {
+	background-color: #e45340;
+	
+	color: #FFF;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 34px;
+	
+	display: block;
+	width: 100%;
+}
+h1, h2 {
+	text-align: center;
+	color: #000;
+}
+
 /* HEADER */
 .navbar-default .navbar-header {
 	height: 64px;
@@ -42,4 +59,28 @@ Text Domain: orappa
 
 .navbar-default .navbar-collapse {
 	border-color: transparent;
+}
+
+/* AGENDA */
+.content-agenda * {
+	color: #666;
+}
+.content-agenda h1 {
+	color: #000;
+}
+.content-agenda h2 .tag {
+	color: #85271a;
+	display: block;
+}
+.content-agenda .data-show-header,
+.content-agenda .data-show {
+	line-height: 34px;
+	text-transform: uppercase;
+	
+}
+.content-agenda .data-show {
+	border-top: 1px solid #DDD;
+	padding: 7px 0;
+}
+.content-agenda .data-show > div {
 }
