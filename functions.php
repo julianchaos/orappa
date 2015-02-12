@@ -48,5 +48,8 @@ function orappa_scripts_styles() {
 	
 	//Navbar-default override
 	wp_enqueue_style( 'orappa-nav', get_template_directory_uri() . '/css/navbar-default.css', array('orappa-bootstrap'), '1.0');
+	
+	//Fonts
+	wp_enqueue_style( 'google-oswald', 'http://fonts.googleapis.com/css?family=Oswald:300,400');
 }
 add_action( 'wp_enqueue_scripts', 'orappa_scripts_styles' );
