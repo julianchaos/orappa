@@ -18,6 +18,7 @@
 					   height="285" data-widget-id="565328120090476546">Tweets by @ORappaoficial</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</div>
+				<br class="nobr" />
 			</div>
 			<div class="rede-social-item">
 				<div class="col-xs-12">
@@ -26,6 +27,7 @@
 				<div class="col-xs-12">
 					facebook feed
 				</div>
+				<br class="nobr" />
 			</div>
 		</div>
 		

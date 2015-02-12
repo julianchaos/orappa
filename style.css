@@ -30,6 +30,18 @@ body * {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
 }
+h1 {
+	text-transform: uppercase;
+	margin-top: 45px;
+}
+h1, h2, h3, h4 {
+	text-align: center;
+	color: #000;
+}
+section {
+	padding-bottom: 25px;
+}
+
 a.button {
 	background-color: #e45340;
 	
@@ -41,12 +53,16 @@ a.button {
 	display: block;
 	width: 100%;
 }
-h1 {
-	text-transform: uppercase;
+br.nobr {
+	height: 0;
+	width: 0;
+	margin: 0;
+	padding: 0;
+	float: none;
+	clear: both;
 }
-h1, h2, h3, h4 {
-	text-align: center;
-	color: #000;
+img.img-responsive {
+	margin: 0 auto;
 }
 
 /* HEADER */
@@ -95,9 +111,6 @@ h1, h2, h3, h4 {
 .content-redessociais {
 	background-color: #000 ;
 }
-.content-redessociais h1 {
-	margin-top: 45px;
-}
 .content-redessociais h1,
 .content-redessociais h4 {
 	color: #FFF;
@@ -108,4 +121,16 @@ h1, h2, h3, h4 {
 }
 .content-redessociais .rede-social-item {
 	margin-top: 35px;
+	margin-bottom: 12px;
+}
+
+/* APP MOBILE */
+.content-aplicativomobile .excerpt {
+	margin-top: 15px;
+}
+.content-aplicativomobile .download-link {
+	display: block;
+	width: 157px;
+	height: 52px;
+	margin: 5px auto;
 }
