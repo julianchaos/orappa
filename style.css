@@ -134,3 +134,31 @@ img.img-responsive {
 	height: 52px;
 	margin: 5px auto;
 }
+
+/* NAÇÃO */
+.content-nacao {
+	background-color: #000;
+	padding-top: 5px;
+}
+.content-nacao h1, 
+.content-nacao p {
+	color: #FFF;
+	text-align: center;
+}
+.content-nacao h1 {
+	font-weight: 700;
+	text-spacing: 2px;
+	letter-spacing: 2px;
+	
+	background-image: url('images/nacao/header-bg-1.png'), url('images/nacao/header-bg-2.png');
+	background-position: top center, bottom center;
+	background-repeat: no-repeat, repeat-x;
+	
+	margin-top: 0;
+	padding-top: 22px;
+	padding-bottom: 18px;
+	
+}
+.content-nacao p {
+	font-size: 18px;
+}
