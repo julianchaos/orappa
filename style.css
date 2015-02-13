@@ -170,3 +170,16 @@ img.img-responsive {
 	margin-top: 30px;
 	line-height: 50px;
 }
+
+/* LOJA */
+.content-loja .excerpt p {
+	color: #000;
+	font-size: 18px;
+	margin-top: 30px;
+	text-align: center;
+}
+.content-loja .button {
+	font-size: 26px;
+	margin-top: 260px;
+	line-height: 50px;
+}

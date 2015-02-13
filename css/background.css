@@ -9,3 +9,12 @@
 	background-repeat: no-repeat;
 	background-position: top center;
 }
+
+.content-loja {
+	background-image: url('../images/loja/background.png');
+}
+.content-loja .container:first-child {
+	background-image: url('../images/loja/camisas-xs.png');
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
