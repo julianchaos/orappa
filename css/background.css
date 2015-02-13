@@ -3,3 +3,9 @@
 	background-repeat: no-repeat;
 	background-position: top center;
 }
+
+.content-nacao {
+	background-image: url('../images/nacao/background-xs.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+}

@@ -18,6 +18,9 @@
 			<div class="col-xs-10 col-xs-offset-1 excerpt">
 				<?php the_excerpt() ?>
 			</div>
+			<div class="col-xs-6 col-xs-offset-3">
+				<a href="<?php the_field('url_nacao') ?>" target="_blank" class="button">Acessar</a>
+			</div>
 		</div>
 	</div>
 </section>
