@@ -18,3 +18,9 @@
 	background-repeat: no-repeat;
 	background-position: bottom center;
 }
+
+footer {
+	background-image: url('../images/footer/background-xs.png');
+	background-repeat: repeat-x;
+	background-position: top left;
+}

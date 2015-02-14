@@ -198,3 +198,20 @@ img.img-responsive {
 	color: #000;
 	
 }
+
+/* FOOTER */
+footer {
+	height: 171px;
+}
+footer .copyright,
+footer .developed-by {
+	text-align: center;
+	font-size: 18px;
+}
+footer .copyright {
+	text-transform: uppercase;
+	margin-top: 40px;
+}
+footer .developed-by {
+	margin-top: 15px;
+}

@@ -1,11 +1,14 @@
-<?php
-/**
- * @package Ndrade
- * @subpackage mauad
- * @since 1.0
- */
-?>
 		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="copyright col-xs-12">
+						<p>&copy; Copyright 2015 - O Rappa</p>
+					</div>
+					<div class="developed-by col-xs-12">
+						<p>Desenvolvido por Rafael Motta e Julian Andrade</p>
+					</div>
+				</div>
+			</div>
 		</footer>
 		<?php wp_footer(); ?>
 	</body>
