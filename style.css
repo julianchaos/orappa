@@ -183,3 +183,18 @@ img.img-responsive {
 	margin-top: 260px;
 	line-height: 50px;
 }
+
+/* LINKS */
+.content-links .item-link-img {
+	max-width: 253px;
+}
+.content-links .item-link-title {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 25px;
+	
+	margin-bottom: 40px;
+	
+	color: #000;
+	
+}

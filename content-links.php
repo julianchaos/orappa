@@ -11,28 +11,21 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-12">
+			
 <?php
 if( have_rows('lista_links') ):
 	while ( have_rows('lista_links') ) : 
 		the_row();
 ?>
-				<div class="row item-link">
-					<div class="col-xs-12 item-link-img">
-						<a href="<?php the_sub_field('url') ?>" target="_blank">
-							<img src="<?php the_sub_field('imagem') ?>" class="img-responsive" />
-						</a>
-					</div>
-					<div class="col-xs-12 item-link-title">
-						<a href="<?php the_sub_field('url') ?>" target="_blank">
-							<?php the_sub_field('titulo') ?>
-						</a>
-					</div>
-				</div>
+			<div class="col-xs-10 col-xs-offset-1 item-link">
+				<a href="<?php the_sub_field('url') ?>" target="_blank">
+					<img src="<?php the_sub_field('imagem') ?>" class="img-responsive item-link-img" />
+					<p class="item-link-title"><?php the_sub_field('titulo') ?></p>
+				</a>
+			</div>
 <?php
 	endwhile;
 endif; ?>
-			</div>
 		</div>
 	</div>
 </section>
