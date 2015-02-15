@@ -5,6 +5,9 @@
 
 get_header();
 
+//Inclusão da seção do carrossel
+get_template_part('content', 'carousel');
+
 $args = array("post_type" => "page", "order" => "ASC", "orderby" => "menu_order");
 $the_query = new WP_Query($args);
 
@@ -18,5 +21,7 @@ if (have_posts()):
 		endif;
 	endwhile;
 endif;
+
+
 
 get_footer();

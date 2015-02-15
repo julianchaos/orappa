@@ -18,7 +18,8 @@ require get_template_directory() . '/plugins/acf-repeater/acf-repeater.php';
 
 function orappa_setup() {
 	// This theme uses wp_nav_menu() in one location.
-	register_nav_menu( 'primary', __( 'Primary Menu', 'orappa' ) );
+	register_nav_menu( 'primary', 'Menu principal' );
+	register_nav_menu( 'primary-large', 'Menu principal para telas grandes (>= 1220px)');
 	
 	// Register custom navigation walker
 	require_once('inc/wp_bootstrap_navwalker.php');

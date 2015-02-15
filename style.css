@@ -40,6 +40,8 @@ h1, h2, h3, h4 {
 }
 section {
 	padding-bottom: 25px;
+	position: relative;
+	z-index: 9;
 }
 
 a.button {
@@ -66,6 +68,12 @@ img.img-responsive {
 }
 
 /* HEADER */
+header {
+	height: 64px;
+	background-color: #000;
+	position: relative;
+	z-index: 10;
+}
 .navbar-default .navbar-header {
 	height: 64px;
 }
@@ -83,18 +91,34 @@ img.img-responsive {
 .navbar-default .navbar-collapse {
 	border-color: transparent;
 }
+@media (min-width: 768px) {
+	.navbar-default .navbar-brand {
+		width: 170px;
+	}
+	.navbar-default .navbar-nav {
+		margin-top: 7px;
+	}
+}
+@media (min-width: 992px) {
+	header {
+		height: 81px;
+	}
+	.navbar-default .navbar-brand {
+		width: 195px;
+	}
+	.navbar-default .navbar-nav {
+		margin-top: 15px;
+	}
+}
+@media (min-width: 1220px) {
+	.navbar-default .navbar-brand {
+		width: 263px;
+	}
+}
 
 /* AGENDA */
 .content-agenda * {
 	color: #666;
-}
-.content-agenda .container {
-/*	-webkit-transition: all 1s ease-in-out;
-	-moz-transition: all 1s ease-in-out;
-	-o-transition: all 1s ease-in-out;
-	-ms-transition: all 1s ease-in-out;*/
-	transition: all 1s linear;
-	height: auto;
 }
 .content-agenda h1 {
 	color: #000;

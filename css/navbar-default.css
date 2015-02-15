@@ -1,5 +1,5 @@
 .navbar-default {
-	background: #000;
+	background-color: #000;
 	border: 0 solid #000;
 }
 .navbar-default .navbar-toggle,
@@ -11,4 +11,21 @@
 .navbar-default .navbar-toggle .icon-bar {
 	background-color: #FFF;
 	height: 4px;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #FFF;
+	text-transform: uppercase;
+	text-align: center;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+	background-color: #333;
+	color: #FFF;
+}
+
+@media (min-width: 768px) {
+	.navbar-default .navbar-nav {
+		float: right;
+	}
 }
