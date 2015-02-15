@@ -40,16 +40,18 @@ function orappa_scripts_styles() {
 	 * Bootstrap
 	 * url: http://getbootstrap.com/
 	 */
-	wp_enqueue_script( 'orappa-bootstrap', '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js', array('jquery'), '3.1.1', false);
-	wp_enqueue_style( 'orappa-bootstrap', '//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css', array(), '3.1.1');
+	wp_enqueue_script( 'orappa-bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js', array('jquery'), '3.3.2', false);
+	wp_enqueue_style( 'orappa-bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css', array(), '3.3.2');
 	
-	//Backgrounds
-	wp_enqueue_style( 'orappa-background', get_template_directory_uri() . '/css/background.css', array(), '1.0');
-	
-	//Navbar-default override
-	wp_enqueue_style( 'orappa-nav', get_template_directory_uri() . '/css/navbar-default.css', array('orappa-bootstrap'), '1.0');
+	//CSS
+	wp_enqueue_style( 'orappa-background', get_template_directory_uri() . '/css/background.css', array(), '1.0'); //Backgrounds
+	wp_enqueue_style( 'orappa-nav', get_template_directory_uri() . '/css/navbar-default.css', array('orappa-bootstrap'), '1.0'); //Navbar-default override
+
+	//Javascript
+	wp_enqueue_script( 'orappa-functions', get_template_directory_uri() . '/js/functions.js', array('jquery', 'orappa-bootstrap'));
 	
 	//Fonts
 	wp_enqueue_style( 'google-oswald', 'http://fonts.googleapis.com/css?family=Oswald:300,400');
+	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 }
 add_action( 'wp_enqueue_scripts', 'orappa_scripts_styles' );

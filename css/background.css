@@ -1,13 +1,30 @@
-.content-redessociais {
-	background-image: url('../images/redes-sociais/redessociais-foto-bg-xs.png');
+.content-redessociais .container{
+	background-image: url('../images/redes-sociais/foto-bg-xs.png');
 	background-repeat: no-repeat;
 	background-position: top center;
+}
+@media (min-width: 768px) {
+	.content-redessociais {
+		background: url('../images/redes-sociais/background-bottom.png'), url('../images/redes-sociais/textura.png') ;
+		background-repeat: repeat-x, repeat;
+		background-position:bottom left, top left;
+	}
+	.content-redessociais .container {
+		background-image: url('../images/redes-sociais/foto-bg-semitransparente.png');
+		background-size: contain;
+	}
 }
 
 .content-nacao {
 	background-image: url('../images/nacao/background-xs.png');
 	background-repeat: no-repeat;
 	background-position: top center;
+}
+@media (min-width: 1220px) {
+	.content-nacao {
+		background-image: url('../images/nacao/background-lg.png');
+		background-size: cover;
+	}
 }
 
 .content-loja {
@@ -17,6 +34,12 @@
 	background-image: url('../images/loja/camisas-xs.png');
 	background-repeat: no-repeat;
 	background-position: bottom center;
+}
+@media (min-width: 768px) {
+	.content-loja .container:first-child {
+		background-image: url('../images/loja/camisas-sm.png');
+	}
+	
 }
 
 footer {

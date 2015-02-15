@@ -88,6 +88,14 @@ img.img-responsive {
 .content-agenda * {
 	color: #666;
 }
+.content-agenda .container {
+/*	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;*/
+	transition: all 1s linear;
+	height: auto;
+}
 .content-agenda h1 {
 	color: #000;
 }
@@ -106,6 +114,37 @@ img.img-responsive {
 	border-top: 1px solid #DDD;
 	padding: 7px 0;
 }
+.content-agenda .facebook-event-link {
+	margin-left: 5px;
+	color: #e54e25;
+}
+.content-agenda .facebook-event-link:hover {
+	text-decoration: none;
+}
+.content-agenda .tooltip .tooltip-arrow {
+	border-top-color: #ebebeb;
+}
+.content-agenda .tooltip .tooltip-inner {
+	background-color: #FFF;
+	border: 1px solid #ebebeb;
+	padding: 8px 16px;
+	font-size: 13px;
+}
+.content-agenda .more-itens {
+	text-align: right;
+	margin-top: 35px;
+}
+.content-agenda .more-itens a {
+	color: #e45340;
+}
+.content-agenda .more-itens a:hover {
+	text-decoration: none;
+}
+@media (min-width: 768px) {
+	.content-agenda h4 .tag {
+		display: inline;
+	}
+}
 
 /* REDES SOCIAIS */
 .content-redessociais {
@@ -123,6 +162,11 @@ img.img-responsive {
 	margin-top: 35px;
 	margin-bottom: 12px;
 }
+@media (min-width: 768px) {
+	.content-redessociais {
+		padding-bottom: 110px;
+	}
+}
 
 /* APP MOBILE */
 .content-aplicativomobile .excerpt {
@@ -133,6 +177,11 @@ img.img-responsive {
 	width: 157px;
 	height: 52px;
 	margin: 5px auto;
+}
+@media(min-width: 768px) {
+	.content-aplicativomobile .excerpt {
+		margin-top: 125px;
+	}
 }
 
 /* NAÇÃO */
@@ -183,6 +232,11 @@ img.img-responsive {
 	margin-top: 260px;
 	line-height: 50px;
 }
+@media (min-width: 768px) {
+	.content-loja .excerpt p br {
+		display: none;
+	}
+}
 
 /* LINKS */
 .content-links .item-link-img {
@@ -214,4 +268,16 @@ footer .copyright {
 }
 footer .developed-by {
 	margin-top: 15px;
+}
+@media (min-width: 768px){
+	footer{
+		height: 120px;
+	}
+	footer .copyright {
+		text-align: left;
+	}
+	footer .developed-by {
+		text-align: right;
+		margin-top: 40px;
+	}
 }

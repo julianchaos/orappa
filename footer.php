@@ -1,10 +1,10 @@
 		<footer>
 			<div class="container">
 				<div class="row">
-					<div class="copyright col-xs-12">
+					<div class="copyright col-xs-12 col-sm-6">
 						<p>&copy; Copyright 2015 - O Rappa</p>
 					</div>
-					<div class="developed-by col-xs-12">
+					<div class="developed-by col-xs-12 col-sm-6">
 						<p>Desenvolvido por Rafael Motta e Julian Andrade</p>
 					</div>
 				</div>
