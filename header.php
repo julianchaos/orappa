@@ -17,7 +17,7 @@
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	</head>
 	<body <?php body_class(); ?>>
-		<header>
+		<header id="header">
 			<div class="container">
 				<nav class="navbar navbar-default row" role="navigation">
 					<div class="navbar-header">

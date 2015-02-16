@@ -95,7 +95,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			$attributes = '';
 			foreach ( $atts as $attr => $value ) {
 				if ( ! empty( $value ) ) {
-					$value = ( 'href' === $attr ) ? esc_url( $value ) : esc_attr( $value );
+					$value = ( 'href' === $attr ) ? $this->esc_scrollspy( $value ) : esc_attr( $value );
 					$attributes .= ' ' . $attr . '="' . $value . '"';
 				}
 			}
@@ -121,7 +121,17 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 		}
 	}
-
+	public function esc_scrollspy($url) {
+		$queryvar = str_replace(get_site_url() . "/", "", $url);
+		$query = array();
+		parse_str($queryvar, $query);
+		
+		if(count($query) === 0) {
+			return "#header";
+		} else {
+			return "#page_{$query['?page_id']}";
+		}
+	}
 	/**
 	 * Traverse elements to create list from elements.
 	 *

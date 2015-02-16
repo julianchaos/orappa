@@ -1,4 +1,25 @@
 jQuery(function () {
+	//Menu
+	jQuery("header nav ul li a[href^='#']").on('click', function(e) {
+
+		// prevent default anchor click behavior
+		e.preventDefault();
+
+		// store hash
+		var hash = this.hash;
+
+		// animate
+		jQuery('html, body').animate({
+			scrollTop: jQuery(hash).offset().top
+		}, 300, function(){
+
+			// when done, add hash to url
+			// (default click behaviour)
+			window.location.hash = hash;
+		});
+
+	});
+	
 	//Home Carrossel
 	var carouselHeight = function(){ return jQuery(window).height() - jQuery('header').height()}
 	function resizeCarrossel()
