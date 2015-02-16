@@ -116,6 +116,37 @@ header {
 	}
 }
 
+/* CARROSSEL */
+.carousel-xs-img {
+	width: 100%;
+}
+#carousel-generic {
+	overflow: hidden;
+}
+#carousel-generic .item {
+	overflow: visible;
+}
+#carousel-generic .item .img-bg {
+	height: 0;
+	width: 0;
+	overflow: visible;
+}
+#carousel-generic .item .img-bg img {
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	-o-filter: blur(10px);
+	-ms-filter: blur(10px);
+	filter: blur(10px);
+	
+	margin-left: -20px;
+	margin-top: -20px;
+}
+#carousel-generic .item > img {
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+
 /* AGENDA */
 .content-agenda * {
 	color: #666;
