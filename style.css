@@ -223,6 +223,32 @@ header {
 	}
 }
 
+/* NEWS */
+.content-news {
+	padding-bottom: 70px;
+}
+.content-news h1 {
+	margin-bottom: 35px;
+}
+.content-news .post-date {
+	color: #666666;
+	margin-top: 25px;
+	font-size: 16px;
+}
+.content-news h2 {
+	margin-top: 10px;
+	font-size: 16px;
+	text-align: left;
+	text-transform: uppercase;
+	color: #000;
+}
+.content-news .permalink {
+	color: #e54e25;
+}
+.content-news .permalink:hover {
+	text-decoration: none;
+}
+
 /* APP MOBILE */
 .content-aplicativomobile .excerpt {
 	margin-top: 15px;

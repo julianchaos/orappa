@@ -16,6 +16,9 @@ function getPageTemplateCommand()
 // Plugins
 require get_template_directory() . '/plugins/acf-repeater/acf-repeater.php';
 
+add_theme_support( 'post-thumbnails' ); 
+add_image_size( 'home-news-thumb', '360', '240', array('center', 'center') );
+
 function orappa_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menu( 'primary', 'Menu principal' );

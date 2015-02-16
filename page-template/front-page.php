@@ -8,7 +8,7 @@ get_header();
 //Inclusão da seção do carrossel
 get_template_part('content', 'carousel');
 
-$args = array("post_type" => "page", "order" => "ASC", "orderby" => "menu_order");
+$args = array("post_type" => "page", "order" => "ASC", "orderby" => "meta_value_num", "meta_key" => "posicao_pagina");
 $the_query = new WP_Query($args);
 
 if (have_posts()):

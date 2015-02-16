@@ -15,6 +15,12 @@
 	}
 }
 
+.content-news {
+	background-image: url('../images/news/background-bottom.png');
+	background-repeat: repeat-x;
+	background-position: bottom left;
+}
+
 .content-nacao {
 	background-image: url('../images/nacao/background-xs.png');
 	background-repeat: no-repeat;
