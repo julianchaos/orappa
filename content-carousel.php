@@ -1,38 +1,40 @@
-<section id="content_carousel" class="content-carousel">
 <?php
-if( have_rows('carrossel')) :
-	$totalImages = count(get_field('carrossel'));
+$args = array('post_type' => 'carrossel-item');
+$the_query = new WP_Query($args);
+$totalCarrosselItem = $the_query->post_count;
+
 ?>
+<section id="content_carousel" class="content-carousel">
 	<div id="carousel-generic" class="carousel slide hidden-xs" data-ride="carousel">
+
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
 <?php
-	for ($i = 0; $i < $totalImages; $i++) {
-		echo "<li data-target='#carousel-generic' data-slide-to='$i' ";
-		if($i===0) {echo "class='active'";}
-		echo "></li>";
-	}
+for ($i = 0; $i < $totalCarrosselItem; $i++) {
+	echo "<li data-target='#carousel-generic' data-slide-to='$i' ";
+	if($i===0) {echo "class='active'";}
+	echo "></li>";
+}
 ?>
-			
 		</ol>
 
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner" role="listbox">
 <?php
-	$i = 0;
-	while( have_rows('carrossel')) :
-		the_row(); 
-		$carrosselImgObj = get_sub_field('imagem_carrossel'); ?>
+$i = 0;
+while ($the_query->have_posts()):
+	$the_query->the_post(); 
+?>
 			<div class="item <?php if($i===0){echo 'active';}?>">
-				<div class="img-bg">
-					<img src="<?php echo $carrosselImgObj['url'] ?>" width="<?php echo $carrosselImgObj['width'] ?>" height="<?php echo $carrosselImgObj['height'] ?>">
-				</div>
-				<img src="<?php echo $carrosselImgObj['url'] ?>" width="<?php echo $carrosselImgObj['width'] ?>" height="<?php echo $carrosselImgObj['height'] ?>">
+<?php
+	get_template_part('carrossel', get_field('tipo_item'));
+?>
 			</div>
 			
 <?php
-		$i++;
-	endwhile; ?>
+	$i++;
+endwhile;
+?>
 		</div>
 
 		<!-- Controls -->
@@ -45,9 +47,6 @@ if( have_rows('carrossel')) :
 			<span class="sr-only">Next</span>
 		</a>
 	</div>
-<?php
-endif;
-?>
 	<div class="visible-xs-block">
 		<img src="<?php the_field('imagem_telas_pequenas') ?>" class="carousel-xs-img" />
 	</div>

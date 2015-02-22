@@ -126,6 +126,10 @@ header {
 #carousel-generic .item {
 	overflow: visible;
 }
+#carousel-generic .item iframe {
+	width: 100%;
+	height: 100%;
+}
 #carousel-generic .item .img-bg {
 	height: 0;
 	width: 0;

@@ -1,0 +1,1 @@
+<iframe width="1980" height="1080" src="https://www.youtube.com/embed/<?php the_field('carrossel_video')?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
