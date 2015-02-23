@@ -11,7 +11,6 @@
 			</div>
 		</div>
 		<div class="row">
-			
 <?php
 if( have_rows('lista_links') ):
 	while ( have_rows('lista_links') ) : 

@@ -39,7 +39,7 @@ h1, h2, h3, h4 {
 	color: #000;
 }
 section {
-	padding-bottom: 25px;
+	padding-bottom: 55px;
 	position: relative;
 	z-index: 9;
 }
@@ -51,9 +51,11 @@ a.button {
 	text-transform: uppercase;
 	text-align: center;
 	line-height: 34px;
+	font-size: 26px;
 	
 	display: block;
 	width: 100%;
+	
 }
 br.nobr {
 	height: 0;
@@ -117,6 +119,9 @@ header {
 }
 
 /* CARROSSEL */
+.content-carousel {
+	padding-bottom: 0;
+}
 .carousel-xs-img {
 	width: 100%;
 }
@@ -164,9 +169,11 @@ header {
 	line-height: 52px;
 }
 .content-agenda .data-show-header,
-.content-agenda .data-show {
+.content-agenda .data-show,
+.content-agenda .data-show .button{
 	line-height: 34px;
 	text-transform: uppercase;
+	font-size: 14px;
 	
 }
 .content-agenda .data-show {
@@ -187,7 +194,7 @@ header {
 	background-color: #FFF;
 	border: 1px solid #ebebeb;
 	padding: 8px 16px;
-	font-size: 13px;
+	font-size: 16px;
 }
 .content-agenda .more-itens {
 	text-align: right;
@@ -202,6 +209,12 @@ header {
 @media (min-width: 768px) {
 	.content-agenda h4 .tag {
 		display: inline;
+	}
+	
+	.content-agenda .data-show-header,
+	.content-agenda .data-show,
+	.content-agenda .data-show .button{
+		font-size: 18px;
 	}
 }
 
@@ -256,6 +269,7 @@ header {
 /* APP MOBILE */
 .content-aplicativomobile .excerpt {
 	margin-top: 15px;
+	font-size: 18px;
 }
 .content-aplicativomobile .download-link {
 	display: block;
@@ -330,7 +344,7 @@ header {
 .content-links .item-link-title {
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 25px;
+	font-size: 18px;
 	
 	margin-bottom: 40px;
 	

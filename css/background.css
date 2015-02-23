@@ -5,9 +5,10 @@
 }
 @media (min-width: 768px) {
 	.content-redessociais {
-		background: url('../images/redes-sociais/background-bottom.png'), url('../images/redes-sociais/textura.png') ;
+		background: url('../images/redes-sociais/background-bottom.jpg'), url('../images/redes-sociais/textura.jpg') ;
 		background-repeat: repeat-x, repeat;
-		background-position:bottom left, top left;
+		background-position: bottom left, top left;
+		background-size: contain, auto;
 	}
 	.content-redessociais .container {
 		background-image: url('../images/redes-sociais/foto-bg-semitransparente.png');
@@ -34,7 +35,7 @@
 }
 
 .content-loja {
-	background-image: url('../images/loja/background.png');
+	background-image: url('../images/loja/background.jpg');
 }
 .content-loja .container:first-child {
 	background-image: url('../images/loja/camisas-xs.png');

@@ -1,4 +1,5 @@
 <?php
+$imagemTelasPequenas = get_field('imagem_telas_pequenas');
 $args = array('post_type' => 'carrossel-item');
 $the_query = new WP_Query($args);
 $totalCarrosselItem = $the_query->post_count;
@@ -48,6 +49,6 @@ endwhile;
 		</a>
 	</div>
 	<div class="visible-xs-block">
-		<img src="<?php the_field('imagem_telas_pequenas') ?>" class="carousel-xs-img" />
+		<img src="<?php echo $imagemTelasPequenas ?>" class="carousel-xs-img" />
 	</div>
 </section>
