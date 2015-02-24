@@ -57,5 +57,8 @@ function orappa_scripts_styles() {
 	//Fonts
 	wp_enqueue_style( 'google-oswald', 'http://fonts.googleapis.com/css?family=Oswald:300,400');
 	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+	
+	//Youtube iframe API
+	wp_enqueue_script('youtube-iframe', 'https://www.youtube.com/iframe_api', array('jquery', 'orappa-functions'));
 }
 add_action( 'wp_enqueue_scripts', 'orappa_scripts_styles' );

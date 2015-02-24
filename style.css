@@ -130,6 +130,7 @@ header {
 }
 #carousel-generic .item {
 	overflow: visible;
+	background: #000 url('images/ajax-loader.gif') no-repeat center center;
 }
 #carousel-generic .item iframe {
 	width: 100%;

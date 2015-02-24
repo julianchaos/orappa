@@ -1,3 +1,10 @@
+var youtubeIframeAPIReady = false;
+function onYouTubeIframeAPIReady(){
+	youtubeIframeAPIReady = true;
+}
+
+
+
 jQuery(function () {
 	//Menu
 	jQuery("header nav ul li a[href^='#']").on('click', function(e) {
@@ -56,6 +63,47 @@ jQuery(function () {
 	}
 	resizeCarrossel();
 	jQuery(window).resize(resizeCarrossel);
+	
+	//Carrossel videos
+	var checkYoutubeIframeAPI = function(){
+		if(youtubeIframeAPIReady) {
+			console.log('youtube is ready');
+			buildYoutubeVideos();
+		} else {
+			console.log('not youtube for you');
+			setTimeout(checkYoutubeIframeAPI, 100);
+		}
+	};
+	var youtubeVideos = new Array();
+	var buildYoutubeVideos = function(){
+		jQuery('.carousel-video-bg').each(function(){
+			var videoId = jQuery(this).attr('id');
+			var video = new YT.Player(videoId, {
+				height: '1080',
+				width: '1920',
+				videoId: videoId,
+				playerVars: {
+					controls: 0,
+					rel: 0
+				},
+				events: {
+					'onStateChange': onPlayerStateChange
+				}
+			});
+			youtubeVideos.push(video);
+		});
+	};
+	var onPlayerStateChange = function(event){
+		if(event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.ENDED){
+			//reinicia rotação do carrossel
+			jQuery('#carousel-generic').carousel('cycle');
+		} else {
+			//pausa rotação do carrossel
+			jQuery('#carousel-generic').carousel('pause');
+		}
+	};
+	checkYoutubeIframeAPI();
+	
 	
 	//Agenda
 	jQuery('[data-toggle="tooltip"]').tooltip();
