@@ -38,13 +38,15 @@ add_action( 'after_setup_theme', 'orappa_setup' );
 
 function orappa_scripts_styles() {
 	//jQuery
-	wp_enqueue_script( 'jquery');
+	wp_deregister_script( 'jquery' );
+	wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-1.11.2.min.js', array(), '1.11.2');
+	wp_enqueue_script( 'jquery-migrate', 'https://code.jquery.com/jquery-migrate-1.2.1.min.js', array('jquery'), '1.2.1');
 	
 	/*
 	 * Bootstrap
 	 * url: http://getbootstrap.com/
 	 */
-	wp_enqueue_script( 'orappa-bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js', array('jquery'), '3.3.2', false);
+	wp_enqueue_script( 'orappa-bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js', array('jquery'), '3.3.2');
 	wp_enqueue_style( 'orappa-bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css', array(), '3.3.2');
 	
 	//CSS
@@ -60,5 +62,9 @@ function orappa_scripts_styles() {
 	
 	//Youtube iframe API
 	wp_enqueue_script('youtube-iframe', 'https://www.youtube.com/iframe_api', array('jquery', 'orappa-functions'));
+	
+	//jQuery Colorbox
+	wp_enqueue_script('jquery-colorbox', get_template_directory_uri() . '/js/colorbox/jquery.colorbox-min.js', array('jquery'), '1.5.14');
+	wp_enqueue_style('jquery-colorbox', get_template_directory_uri() . '/js/colorbox/colorbox.css');
 }
 add_action( 'wp_enqueue_scripts', 'orappa_scripts_styles' );

@@ -267,6 +267,55 @@ header {
 	text-decoration: none;
 }
 
+/* POST */
+.content-post {
+	font-size: 18px;
+}
+.content-post h1,
+.content-post h2,
+.content-post h4 {
+	text-align: left;
+}
+.content-post h1 {
+	margin-top: 12px;
+	margin-bottom: 25px;
+}
+
+.content-post .commentform label {
+	display: block;
+}
+.content-post .commentform input[type=text],
+.content-post .commentform textarea {
+	width: 550px;
+}
+.content-post .commentform input[type=submit] {
+	display: block;
+}
+.content-post .commentlist {
+	margin-top: 25px;
+	padding: 0;
+}
+.content-post .commentlist li {
+	list-style: none;
+	padding: 12px;
+}
+.content-post .commentlist li.even {
+	background-color: #f6f6f6;
+}
+
+.content-post .commentlist .comment-author {
+	margin-bottom: 5px;
+}
+.content-post .commentlist .avatar {
+	display: none;
+}
+.content-post .commentlist p {
+	margin-bottom: 5px;
+}
+.content-post .commentlist a {
+	color: #e45340;
+}
+
 /* APP MOBILE */
 .content-aplicativomobile .excerpt {
 	margin-top: 15px;

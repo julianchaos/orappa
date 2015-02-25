@@ -25,7 +25,7 @@ if (have_posts()):
 				<div class="post-date"><?php the_date('j/m/Y') ?></div>
 				<h2><?php the_title() ?></h2>
 				<p><?php the_excerpt() ?></p>
-				<a href="<?php the_permalink() ?>" class="permalink">&gt; Leia mais</a>
+				<a href="<?php the_permalink() ?>" class="permalink colorbox">&gt; Leia mais</a>
 			</div>
 		
 <?php		

@@ -5,6 +5,9 @@
 
 get_header();
 
+//Inclusao da tag header (contém o menu)
+get_template_part('content', 'header');
+
 //Inclusão da seção do carrossel
 get_template_part('content', 'carousel');
 

@@ -104,12 +104,21 @@ jQuery(function () {
 	};
 	checkYoutubeIframeAPI();
 	
-	
 	//Agenda
 	jQuery('[data-toggle="tooltip"]').tooltip();
 	
 	jQuery('.content-agenda .more-itens a').click(function(){
 		jQuery('.content-agenda .hidden').removeClass('hidden');
 		jQuery(this).hide();
+	});
+	
+	//News
+	$('.colorbox').colorbox({
+		iframe: true,
+		close: 'Fechar',
+		width: '80%',
+		height: '80%',
+		maxHeight: '80%',
+		fixed: true
 	});
 });
