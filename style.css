@@ -329,7 +329,21 @@ header {
 }
 @media(min-width: 768px) {
 	.content-aplicativomobile .excerpt {
-		margin-top: 125px;
+		margin-top: 105px;
+	}
+	.content-aplicativomobile .download-link {
+		width: auto;
+		height: auto;
+	}
+}
+@media(min-width: 992px) {
+	.content-aplicativomobile .excerpt {
+		margin-top: 140px;
+	}
+}
+@media(min-width: 1220px) {
+	.content-aplicativomobile .excerpt {
+		margin-top: 170px;
 	}
 }
 
