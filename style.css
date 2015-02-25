@@ -416,6 +416,54 @@ header {
 	
 }
 
+/* CONTATO */
+.content-contato {
+	background-color: #222;
+	color: #FFF;
+	font-size: 18px;
+}
+.content-contato h1 {
+	color: #FFF;
+	text-align: left;
+}
+.content-contato .newsletter form {
+	margin-top: 45px;
+}
+.content-contato .newsletter label {
+	margin-bottom: 10px;
+}
+.content-contato .newsletter .email {
+	float: left;
+}
+.content-contato .newsletter input.email {
+	height: 50px;
+	width: 350px;
+	padding-left: 5px;
+	color: #333;
+}
+.content-contato .newsletter input[type=submit] {
+	background-color: #e54e25;
+	border: 0 solid #FFF;
+	font-size: 18px;
+	width: 50px;
+	height: 50px;
+	margin-left: 8px;
+}
+
+.content-contato .contato h1,
+.content-contato .contato p {
+	text-align: right;
+}
+.content-contato .contato p {
+	margin-top: 40px;
+}
+.content-contato .contato a {
+	color: #FFF;
+}
+.content-contato .img-responsive {
+	margin-top: 60px;
+}
+
 /* FOOTER */
 footer {
 	height: 171px;
