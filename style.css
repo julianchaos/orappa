@@ -235,9 +235,58 @@ header {
 	margin-top: 35px;
 	margin-bottom: 12px;
 }
+.content-redessociais .rede-social-item h4 {
+	width: 290px;
+	margin: 10px auto;
+}
+.content-redessociais .rede-social-container {
+	height: 290px;
+	width: 290px;
+	margin: auto;
+	background-color: #000;
+}
+.content-redessociais .rede-social-container > div {
+	height: 100%;
+	width: 100%;
+}
+.content-redessociais .rede-social-container iframe{
+	height: 100% !important;
+	width: 100% !important;
+	margin: 0 auto;
+	
+}
 @media (min-width: 768px) {
 	.content-redessociais {
 		padding-bottom: 110px;
+	}
+	.content-redessociais .rede-social-item h4,
+	.content-redessociais .rede-social-container {
+		width: 220px;
+		
+	}
+	.content-redessociais .rede-social-container {
+		height: 220px;
+	}
+	.content-redessociais .twitter .rede-social-container,
+	.content-redessociais .facebook .rede-social-container {
+		height: 535px;
+	}
+}
+@media (min-width: 992px) {
+	.content-redessociais .rede-social-item h4,
+	.content-redessociais .rede-social-container {
+		width: 293px;
+	}
+}
+@media (min-width: 1220px) {
+	.content-redessociais .rede-social-item h4,
+	.content-redessociais .rede-social-container {
+		width: 262px;
+	}
+	.content-redessociais .rede-social-container,
+	.content-redessociais .twitter .rede-social-container,
+	.content-redessociais .facebook .rede-social-container {
+		height: 262px;
 	}
 }
 
