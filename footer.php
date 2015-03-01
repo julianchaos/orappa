@@ -5,7 +5,7 @@
 						<p>&copy; Copyright 2015 - O Rappa</p>
 					</div>
 					<div class="developed-by col-xs-12 col-sm-6">
-						<p>Desenvolvido por Rafael Motta e Julian Andrade</p>
+						<p>Desenvolvido por Rafael Motta, Julian Andrade e Tumulto Comunicação.</p>
 					</div>
 				</div>
 			</div>

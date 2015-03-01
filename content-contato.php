@@ -12,8 +12,8 @@
 			</div><!-- /Newsletter -->
 			<div class="contato col-lg-3">
 				<h1>Contato</h1>
-				<p>Imprensa (<a href="mailto:imprensa@orappa.com.br">imprensa@orappa.com.br</a>)</p>
-				<p>Shows (<a href="mailto:orappa@casadoshow.com.br">orappa@casadoshow.com.br</a>)</p>
+				<p>Imprensa: <a href="mailto:imprensa@orappa.com.br">imprensa@orappa.com.br</a></p>
+				<p>Shows: <a href="mailto:orappa@casadoshow.com.br">orappa@casadoshow.com.br</a></p>
 			</div><!-- /Contato -->
 			<div class="col-lg-2">
 				<img src="<?php header_image(); ?>" alt="" class="img-responsive">
