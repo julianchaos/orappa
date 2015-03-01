@@ -3,8 +3,6 @@ function onYouTubeIframeAPIReady(){
 	youtubeIframeAPIReady = true;
 }
 
-
-
 jQuery(function () {
 	//Menu
 	jQuery("header nav ul li a[href^='#']").on('click', function(e) {
@@ -84,7 +82,8 @@ jQuery(function () {
 				videoId: videoId,
 				playerVars: {
 					controls: 0,
-					rel: 0
+					rel: 0,
+					showinfo: 0
 				},
 				events: {
 					'onStateChange': onPlayerStateChange
