@@ -9,15 +9,6 @@
 			<h1 class="col-xs-12"><?php the_title() ?></h1>
 		</div>
 		<div class="row">
-			<div class="visible-lg col-lg-12">
-				<!--<div class="rede-social-item">-->
-				<div>
-					<h4>Soundcloud</h4>
-					<div>
-						<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/59484115&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-					</div>
-				</div>
-			</div>
 			<div class="col-xs-12 col-sm-4 col-lg-6">
 				<div class="row">
 					<div class="col-xs-12 col-lg-6 rede-social-item flickr">
@@ -56,6 +47,15 @@
 				</div>
 			</div>
 		</div>
-		
+			<div class="visible-lg col-lg-12">
+				<!--<div class="rede-social-item">-->
+				<div>
+					<h4>Soundcloud</h4>
+					<div>
+						<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/59484115&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
