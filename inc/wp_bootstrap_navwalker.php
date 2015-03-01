@@ -76,10 +76,14 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			$output .= $indent . '<li' . $id . $value . $class_names .'>';
 
 			$atts = array();
-			$atts['title']  = ! empty( $item->title )	? $item->title	: '';
-			$atts['target'] = ! empty( $item->target )	? $item->target	: '';
-			$atts['rel']    = ! empty( $item->xfn )		? $item->xfn	: '';
-
+			$atts['title']  = ! empty( $item->title )		? $item->title		: '';
+			$atts['target'] = ! empty( $item->target )		? $item->target		: '';
+			$atts['rel']    = ! empty( $item->xfn )			? $item->xfn		: '';
+			$atts['type']	= ! empty( $item->type_label )	? $item->type_label	: '';
+			if($atts['type'] == 'Personalizado') {
+				$atts['target'] = '_blank';
+			}
+			
 			// If item has_children add atts to a.
 			if ( $args->has_children && $depth === 0 ) {
 				$atts['href']   		= '#';
@@ -93,10 +97,20 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			$atts = apply_filters( 'nav_menu_link_attributes', $atts, $item, $args );
 
 			$attributes = '';
-			foreach ( $atts as $attr => $value ) {
-				if ( ! empty( $value ) ) {
-					$value = ( 'href' === $attr ) ? $this->esc_scrollspy( $value ) : esc_attr( $value );
-					$attributes .= ' ' . $attr . '="' . $value . '"';
+			if($atts['type'] === 'Personalizado')
+			{
+				foreach ( $atts as $attr => $value ) {
+					if ( ! empty( $value ) ) {
+						$value = ( 'href' === $attr ) ? $value : esc_attr( $value );
+						$attributes .= ' ' . $attr . '="' . $value . '"';
+					}
+				}
+			} else {
+				foreach ( $atts as $attr => $value ) {
+					if ( ! empty( $value ) ) {
+						$value = ( 'href' === $attr ) ? $this->esc_scrollspy( $value ) : esc_attr( $value );
+						$attributes .= ' ' . $attr . '="' . $value . '"';
+					}
 				}
 			}
 

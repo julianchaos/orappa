@@ -273,12 +273,18 @@ header {
 	}
 }
 @media (min-width: 992px) {
+	.content-redessociais h1 {
+		margin-bottom: 40px;
+	}
 	.content-redessociais .rede-social-item h4,
 	.content-redessociais .rede-social-container {
 		width: 293px;
 	}
 }
 @media (min-width: 1220px) {
+	.content-redessociais h1 {
+		margin-bottom: 135px;
+	}
 	.content-redessociais .rede-social-item h4,
 	.content-redessociais .rede-social-container {
 		width: 262px;
