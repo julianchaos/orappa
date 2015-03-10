@@ -3,7 +3,7 @@
  * Template Name: Nação
  */
 ?>
-<section id="page_<?php the_id() ?>" class="content-nacao page_<?php the_id() ?>">
+<section id="page_<?php echo $post->post_name ?>" class="content-nacao page_<?php the_id() ?>">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-4 col-xs-offset-4">

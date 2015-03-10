@@ -3,7 +3,7 @@
  * Template Name: Contato
  */
 ?>
-<section id="page_<?php the_id() ?>" class="content-contato page_<?php the_id() ?> visible-lg-block">
+<section id="page_<?php echo $post->post_name ?>" class="content-contato page_<?php the_id() ?> visible-lg-block">
 	<div class="container">
 		<div class="row">
 			<div class="newsletter col-lg-7">

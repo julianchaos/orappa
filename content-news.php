@@ -3,7 +3,7 @@
  * Template Name: News
  */
 ?>
-<section id="page_<?php the_id() ?>" class="content-news page_<?php the_id() ?> visible-lg-block">
+<section id="page_<?php echo $post->post_name ?>" class="content-news page_<?php the_id() ?> visible-lg-block">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-sm-offset-3">

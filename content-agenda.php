@@ -3,7 +3,7 @@
  * Template Name: Agenda
  */
 ?>
-<section id="page_<?php the_id() ?>" class="content-agenda page_<?php the_id() ?>">
+<section id="page_<?php echo $post->post_name ?>" class="content-agenda page_<?php the_id() ?>">
 	<div class="container">
 		<div class="row">
 			<h1 class="col-xs-12"><?php the_title() ?></h1>

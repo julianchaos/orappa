@@ -137,13 +137,12 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 	}
 	public function esc_scrollspy($url) {
 		$queryvar = str_replace(get_site_url() . "/", "", $url);
-		$query = array();
-		parse_str($queryvar, $query);
 		
-		if(count($query) === 0) {
+		if(strlen($queryvar) === 0) {
 			return "#header";
 		} else {
-			return "#page_{$query['?page_id']}";
+			$pagename = str_replace("/", "", $queryvar);
+			return "#page_$pagename";
 		}
 	}
 	/**
