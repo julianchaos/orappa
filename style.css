@@ -244,14 +244,15 @@ header {
 	width: 290px;
 	margin: auto;
 	background-color: #000;
+	overflow: hidden;
 }
 .content-redessociais .rede-social-container > div {
 	height: 100%;
 	width: 100%;
 }
 .content-redessociais .rede-social-container iframe{
-	height: 100% !important;
-	width: 100% !important;
+	height: 290px;
+	width: 290px;
 	margin: 0 auto;
 	
 }
@@ -268,8 +269,9 @@ header {
 		height: 220px;
 	}
 	.content-redessociais .twitter .rede-social-container,
+	.content-redessociais .twitter .rede-social-container iframe,
 	.content-redessociais .facebook .rede-social-container {
-		height: 535px;
+		height: 535px !important;
 	}
 }
 @media (min-width: 992px) {
@@ -291,8 +293,9 @@ header {
 	}
 	.content-redessociais .rede-social-container,
 	.content-redessociais .twitter .rede-social-container,
-	.content-redessociais .facebook .rede-social-container {
-		height: 262px;
+	.content-redessociais .twitter .rede-social-container iframe,
+	.content-redessociais .facebook .rede-social-container{
+		height: 262px !important;
 	}
 }
 
